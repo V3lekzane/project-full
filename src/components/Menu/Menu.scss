@@ -1,0 +1,46 @@
+.menu-item {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.menu-item:hover {
+    color: red;
+}
+
+.categories-item {
+    cursor: pointer;
+}
+
+.sub-menu {
+    color: white;
+    z-index: 11;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+    color: white;
+}
+
+.sub-menu .menu-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.sub-menu .menu-item:hover {
+    color: red;
+}
